@@ -26,7 +26,7 @@ $.getJSON(url, function(data) {
   
   // build table headings for oral
   poster_table += '<div class="container">';
-  poster_table += '<div class="row align-items-start">';
+  poster_table += '<div class="row align-items-start" style="color:#754A7E; font-size:1.5em">';
   poster_table += '<div class="col-3">Name</div>';
   poster_table += '<div class="col-3">Department</div>';
   poster_table += '<div class="col-6">Abstract Title</div>';

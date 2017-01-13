@@ -17,22 +17,20 @@ $.getJSON(url, function(data) {
   var poster_table = '';
 
   // build table headings for oral
-  oral_table += '<table cellpadding=10 cellspacing=0 border=1>';
-  oral_table += '<tr>';
-  oral_table += '<th>Name</th>';
-  oral_table += '<th>Department</th>';
-  oral_table += '<th>Abstract Title</th>';
-  oral_table += '<th>Academic Status</th>';
-  oral_table += '</tr>';
+  oral_table += '<div class="container">';
+  oral_table += '<div class="row align-items-start" style="color:#754A7E; font-size:1.5em">';
+  oral_table += '<div class="col-3">Name</div>';
+  oral_table += '<div class="col-3">Department</div>';
+  oral_table += '<div class="col-6">Abstract Title</div>';
+  oral_table += '</div>';
   
   // build table headings for oral
-  poster_table += '<table cellpadding=10 cellspacing=0 border=1>';
-  poster_table += '<tr>';
-  poster_table += '<th>Name</th>';
-  poster_table += '<th>Department</th>';
-  poster_table += '<th>Abstract Title</th>';
-  poster_table += '<th>Academic Status</th>';
-  poster_table += '</tr>';
+  poster_table += '<div class="container">';
+  poster_table += '<div class="row align-items-start">';
+  poster_table += '<div class="col-3">Name</div>';
+  poster_table += '<div class="col-3">Department</div>';
+  poster_table += '<div class="col-6">Abstract Title</div>';
+  poster_table += '</div>';
 
   // loop to build html output for each row
   var entry = data.feed.entry;
@@ -42,24 +40,22 @@ $.getJSON(url, function(data) {
    */
   for (var i = entry.length - 1; i >= 0; i-=1) {
       if (entry[i]['gsx$presentationtype']['$t'] == "Oral presentation"){
-    oral_table += '<tr>';
-    oral_table += '<td>' + entry[i]['gsx$firstname']['$t'] + ' ' + entry[i]['gsx$lastname']['$t'] + '</td>';
-    oral_table += '<td>' + entry[i]['gsx$department']['$t'] + '</td>';
-    oral_table += '<td>' + entry[i]['gsx$abstracttitle']['$t'] + '</td>';
-    oral_table += '<td>' + entry[i]['gsx$academicstatus']['$t'] + '</td>';
-    oral_table += '</tr>';
+    oral_table += '<div class="row">';
+    oral_table += '<div class="col-3">' + entry[i]['gsx$firstname']['$t'] + ' ' + entry[i]['gsx$lastname']['$t'] + '</div>';
+    oral_table += '<div class="col-3">' + entry[i]['gsx$department']['$t'] + '</div>';
+    oral_table += '<div class="col-6">' + entry[i]['gsx$abstracttitle']['$t'] + '</div>';
+    oral_table += '</div>';
       } else {
           console.log(entry[i]['gsx$presentationtype']['$t']);
-    poster_table += '<tr>';
-    poster_table += '<td>' + entry[i]['gsx$firstname']['$t'] + ' ' + entry[i]['gsx$lastname']['$t'] + '</td>';
-    poster_table += '<td>' + entry[i]['gsx$department']['$t'] + '</td>';
-    poster_table += '<td>' + entry[i]['gsx$abstracttitle']['$t'] + '</td>';
-    poster_table += '<td>' + entry[i]['gsx$academicstatus']['$t'] + '</td>';
-    poster_table += '</tr>';
+    poster_table += '<div class="row">';
+    poster_table += '<div class="col-3">' + entry[i]['gsx$firstname']['$t'] + ' ' + entry[i]['gsx$lastname']['$t'] + '</div>';
+    poster_table += '<div class="col-3">' + entry[i]['gsx$department']['$t'] + '</div>';
+    poster_table += '<div class="col-6">' + entry[i]['gsx$abstracttitle']['$t'] + '</div>';
+    poster_table += '</div>';
       }
   }
-  oral_table += '</table>';
-  poster_table += '</table>';
+  oral_table += '</div>';
+  poster_table += '</div>';
 
   // output oral_table
   $('.console').html(oral_table);

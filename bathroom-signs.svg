@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="90"
+   height="90"
+   viewBox="0 0 90.000001 90.000001"
+   id="svg4925"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="bathroom-signs.svg">
+  <defs
+     id="defs4927" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="5.6"
+     inkscape:cx="-17.704083"
+     inkscape:cy="51.997919"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata4930">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-962.36216)">
+    <circle
+       style="fill:#000000;stroke:none;stroke-width:3;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path5473"
+       cx="45"
+       cy="1007.3622"
+       r="45" />
+    <circle
+       style="fill:#ffffff;stroke:none;stroke-width:3;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path5475"
+       cx="45.10281"
+       cy="973.41919"
+       r="10" />
+    <path
+       style="fill:#ffffff;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 43.134091,984.65124 c -3.588451,-0.007 -11.218247,0.2222 -14.849609,2.17773 -4.385988,2.36192 -3.021829,23.43973 -1.263672,25.75773 0.636403,0.839 2.115939,0.8783 2.52539,0.1582 2.587643,-4.551 -0.699461,-14.91213 1.991576,-20.19803 0.516996,-1.0155 2.224746,-2.04754 2.934206,-1.04602 1.437132,2.02875 -1.54536,47.91855 0,48.48625 1.419274,0.5214 5.675742,0.9732 6.3125,0 0.857122,-1.31 -0.09679,-14.4869 0.982422,-19.3379 0.303153,-1.3627 3.310547,-1.875 3.310546,-1.875 0,0 3.009347,0.5123 3.3125,1.875 1.079213,4.851 0.123347,18.0279 0.980469,19.3379 0.636758,0.9732 4.895179,0.5214 6.314453,0 1.54536,-0.5677 -1.652973,-47.5928 0,-48.48625 0.808893,-0.43722 2.135348,-0.25769 2.652344,0.75781 2.691037,5.2859 -0.316158,15.93524 2.271484,20.48624 0.409453,0.7201 1.888988,0.6808 2.525391,-0.1582 1.758157,-2.318 3.124269,-23.39581 -1.261719,-25.75773 -4.841816,-2.60739 -16.794922,-2.14648 -16.794922,-2.14648 0,0 -0.747208,-0.0288 -1.943359,-0.0312 z"
+       id="path5477"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cscssscsscsscssccsccc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="32.869568"
+       y="1049.2578"
+       id="text5510"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5512"
+         x="32.869568"
+         y="1049.2578"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;font-family:Arial;-inkscape-font-specification:Arial">men</tspan></text>
+  </g>
+</svg>

@@ -1,83 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-        <link rel='stylesheet' type= 'text/css' href= 'styles.css'/>
+        
      </head>   
 <body>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>  
     <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+    <link rel='stylesheet' type= 'text/css' href= 'styles.css'/>
     <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->
-    <script src="oral-am.js"></script>
-    <script src="posters.js"></script>
-    <script src="oral-pm.js"></script>
+    <script src="presentations.js"></script>
     <!--<script src="main.js"></script>-->
-    <h3>Morning Oral Presentations</h3>
-    <div id="amoralusers">
+    <h3>Presentations</h3>
+    <div id="presentations">
         <input class="search" placeholder="Search" />
-        <button class="sort" data-sort=Name>
+        <button class="sort" data-sort=LastName>
             Sort by Name
         </button>
-        <button class="sort" data-sort=Time>
-            Sort by Time
-        </button>
-        <button class="sort" data-sort=Room>
-            Sort by Room
-        </button>
-        <button class="sort" data-sort=Department>
-            Sort by Department
-        </button>
-        <ul class="list">
-
-        </ul>
-        <ul class="pagination">
-            <li>
-             <a class="page active" href="javascript:function Z(){Z=""}Z()">1</a>
-            </li>
-            <li>
-              <a class="page" href="javascript:function Z(){Z=""}Z()">2</a>
-            </li>
-            <li>
-            …
-            </li>
-        </ul>
-    </div>
-    <h3>Afternoon Oral Presentations</h3>
-    <div id="pmoralusers">
-        <input class="search" placeholder="Search" />
-        <button class="sort" data-sort=Name>
-            Sort by Name
-        </button>
-        <button class="sort" data-sort=Time>
-            Sort by Time
-        </button>
-        <button class="sort" data-sort=Room>
-            Sort by Room
-        </button>
-        <button class="sort" data-sort=Department>
-            Sort by Department
-        </button>
-        <ul class="list">
-
-        </ul>
-        <ul class="pagination">
-            <li>
-             <a class="page active" href="javascript:function Z(){Z=""}Z()">1</a>
-            </li>
-            <li>
-              <a class="page" href="javascript:function Z(){Z=""}Z()">2</a>
-            </li>
-            <li>
-            …
-            </li>
-        </ul>
-    </div>
-            <h3>Poster Presentations</h3>
-    <div id="posterusers">
-        <input class="search" placeholder="Search" />
-        <button class="sort" data-sort=Name>
-            Sort by Name
-        </button>
-        <button class="sort" data-sort=Time>
+        <button class="sort" data-sort=MilTime>
             Sort by Time
         </button>
         <button class="sort" data-sort=Room>
@@ -103,14 +42,12 @@
     </div>
     <script>
         var options = {
-            valueNames: [ 'Room', 'Time', 'Abstract', 'Name', 'Department', 'Narrative' ],
+            valueNames: [ 'Room', 'Time', 'Abstract', 'Name', 'Department', 'Narrative'],
             item: '<li><div class=titleblock><h3 class=Time></h3><h3 class=Room></h3><h3 class=Abstract></h3></div><br/><p class=Name></p><p class=Department></p><p class=Narrative></li>',
-            page: 3,
+            page: 10,
             pagination: true
         };
-        var amorList = new List('amoralusers', options, amoralvalues);
-        var pmorList = new List('pmoralusers', options, pmoralvalues);
-        var pmpoList = new List('posterusers', options, postervalues);
+        var allList = new List('presentations', options, presinfo);
     </script>
 </body>
 </html>

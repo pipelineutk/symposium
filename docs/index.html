@@ -5,11 +5,12 @@
      </head>   
 <body>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>  
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="presentations.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
     <link rel='stylesheet' type= 'text/css' href= 'styles.css'/>
     <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->
-    <script src="presentations.js"></script>
-    <!--<script src="main.js"></script>-->
+
     <h3>Presentations</h3>
     <div id="presentations">
         <input class="search" placeholder="Search" />
@@ -39,8 +40,9 @@
             …
             </li>
         </ul>
-    </div>
-    <script>
+    </div> <!--2018_symposium.csv-->
+    <script type="text/javascript"charset="utf-8">
+        console.log(presinfo);
         var options = {
             valueNames: [ 'Room', 'Time', 'Abstract', 'Name', 'Department', 'Narrative'],
             item: '<li><div class=titleblock><h3 class=Time></h3><h3 class=Room></h3><h3 class=Abstract></h3></div><br/><p class=Name></p><p class=Department></p><p class=Narrative></li>',
